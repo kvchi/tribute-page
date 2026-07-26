@@ -1,0 +1,165 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= FONTS ================= */
+/* Serif for headings (elegant, period-appropriate feel)
+   Sans-serif for body text (clean, readable) */
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: #FAF6F0;
+  color: #2B2420;
+  line-height: 1.7;
+}
+
+h1, h2 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+p, li, .quote-author {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= HERO ================= */
+.hero {
+  background-color: #3B2F2F;
+  color: #FAF6F0;
+  text-align: center;
+  padding: 60px 5% 70px;
+}
+
+.hero-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #C9A87C;
+  margin-bottom: 24px;
+}
+
+.hero-name {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+}
+
+.hero-tagline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  color: #C9A87C;
+  font-style: italic;
+}
+
+/* ================= BIOGRAPHY ================= */
+.biography {
+  background-color: #FAF6F0;
+  padding: 70px 8%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #3B2F2F;
+  border-bottom: 3px solid #C9A87C;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.bio-paragraph {
+  margin-bottom: 1.4rem;
+  font-size: 1.05rem;
+}
+
+/* ================= TIMELINE ================= */
+.timeline {
+  background-color: #EDE3D6;
+  padding: 70px 8%;
+}
+
+.timeline-list {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  background-color: #FAF6F0;
+  border-left: 4px solid #C9A87C;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  border-radius: 0 8px 8px 0;
+}
+
+.timeline-year {
+  display: block;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  color: #3B2F2F;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+/* ================= QUOTE ================= */
+.quote-section {
+  background-color: #3B2F2F;
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.quote {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #FAF6F0;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 1rem;
+  color: #C9A87C;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #EDE3D6;
+  text-align: center;
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: #6B5D4F;
+}
+
+/* ===================== MOBILE BREAKPOINT ===================== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 6% 50px;
+  }
+
+  .hero-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .biography,
+  .timeline,
+  .quote-section {
+    padding: 50px 6%;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+  }
+}
